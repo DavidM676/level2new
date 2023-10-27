@@ -1,9 +1,19 @@
+
+
+var keyhandler=new KeyHandler();
+keyhandler.move();
+
+
+
 function initialize() {
-    const canvas = document.selectElementbyId("mycanvas");
+    const canvas = document.getElementById("mycanvas");
     const ctx = canvas.getContext("2d");
-    const testImage = new Image(100,200)
-    testImage.src = "images/bat.png"
-    canvas.body.appendChild(testImage)
-    document.body.appendChild(testImage);
-    ctx.drawImage(testImage)
+    const sprite = new Image(100,200)
+    var test = new Screens(ctx);
+    sprite.src = "images/sprite.png"
+    sprite.onload = function() {
+        ctx.drawImage(sprite, 10,10, 100, 100)
+    }
 }
+
+
