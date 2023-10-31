@@ -1,13 +1,10 @@
-class Screens {
 
-    constructor(ctx) {
-        this.ctx = ctx;
         this.canvas = document.getElementById("mycanvas");
-        this.buttonTest = document.getElementById("buttonTest");
-        buttonTest.addEventListener("click",startScreen())
-    }
+        this.ctx = this.canvas.getContext("2d");
 
-    startScreen() {
-        this.canvas.style.backgroundColor = blue;
-    }
-}
+        canvas
+
+        ctx.font = "30px Comic Sans MS"
+        ctx.textAlign = "center"
+        ctx.fillStyle = "red"
+        ctx.fillText("Escape the Basement", canvas.width/2, canvas.height/2)
