@@ -1,16 +1,17 @@
+var i = 0;
+var txt = ""
+var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-
-
-
-function initialize() {
-
-    // var sprite = 
-    // const sprite = new Image(100,200)
-    // var test = new Screens(ctx);
-    // sprite.src = "images/sprite.png"
-    // sprite.onload = function() {
-    //     ctx.drawImage(sprite, 10,10, 100, 100)
-    // }
+function setTxt(text) {
+    this.txt = text
 }
 
+function typeWriter(text) {
+    setTxt(text)
+  if (i < txt.length) {
+    document.getElementById("instructions").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, text, speed);
+  }
+}
 

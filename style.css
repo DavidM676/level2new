@@ -1,13 +1,7 @@
 html, body {
     margin: 0 !important;
     padding: 0 !important;
-}
-
-canvas {
-
-    background-position: center;
-    background-size: cover;
+    background-image: url("images/backgrounds/intro.gif");
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+    background-size: 100%;
 }

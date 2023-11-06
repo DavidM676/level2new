@@ -1,21 +1,44 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Escape The Basement</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body onload="initialize()">
-<canvas id="mycanvas" ></canvas>
-<script>
-</script>
-<button id="buttonTest">Test</button>
-<script src="screens.js"></script>
-<script src="KeyHandler.js"></script>
-<script src="script.js"></script>
+<style>
+
+    h1, h3 {
+        color: red;
+        text-align: center;
+    }
+
+    h3 {
+        color: greenyellow;
+        font-size: 40px;
+    }
+    a {
+        cursor: pointer;
+    }
+    p {
+        text-align: center;
+        color: white;
+    }
+
+</style>
+<body>
+    <h1>
+        THE BASEMENT
+    </h1>
+    <br><br>
+    <a href="basement.html"><h3>START</h3></a>
+    <button onclick="typeWriter('You have been kidnapped and put in the basement...')">Click me</button>
+
+    <p id="instructions">
+    </p>
 </body>
+<script src="script.js"></script>
 </html>
