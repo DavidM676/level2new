@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matching.css">
+    <title>Match Game</title>
+</head>
+<body>
+    
+    <div style="
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-gap: 0;
+        height: 100vh;
+        ">
+
+    <div>
+        <div class="textbox">
+            <h1>Match Game</h1>
+
+            <p>Click on the images to reveal them. All the images have a duplicate. Try to match all the images.</p>
+        </div>
+    </div>
+
+    <div class="matching">
+        <!-- Grid will be generated using JavaScript -->
+    </div>
+
+    <div>
+        <div class="textbox">
+            <div class="score">Clicks: <span id="score">0</span></div>
+            <button id="resetButton">Reset</button>
+            <div id="comments"></div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <div class="overlay" id="overlay">
+        <div class="modal" id="modal">
+          <span class="close" id="close">&times;</span>
+          <h2>You finished the matching game!</h2>
+          <p>Here is your digital trophy.</p>
+          <img src="images/trophy.png" alt="trophy">
+          <button>Continue</button>
+        </div>
+      </div>
+
+    <audio src="audio/tfr.opus" autoplay ="true">
+    <script src="matching.js"></script>
+    <!-- im making the rest of the game functionality work rn  -->
+
+
+      
+</body>
+</html>
