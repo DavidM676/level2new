@@ -38,7 +38,7 @@ close.addEventListener('click', closeModal);
 
 
 
-resetGame = () => {window.location.href = window.location.origin;};
+resetGame = () => {location.reload()};
 
 
 
